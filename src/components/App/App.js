@@ -37,10 +37,7 @@ function App() {
 
   // Component mounts
   useEffect(() => {
-    console.log('App Mounts');
-    // setWords(getWords('/wordlist.txt'));
     return () => {
-      console.log('App Unmounts');
       //reset states on dismount
       setList(null);
       setResults('');

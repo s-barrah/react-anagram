@@ -31,10 +31,8 @@ export default (props) => {
 
   // Component mounts
   useEffect(() => {
-    console.log('List Mounts');
     getWords('/wordlist.txt');
     return () => {
-      console.log('List Unmounts');
       //reset states on dismount
       setWords(null);
     };
