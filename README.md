@@ -2,9 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Download or clone this repo. 
-
-In the project directory, run:
+## Development
+Download or clone this repo. In the project directory, run:
 ```bash
 $ yarn install
 ```
