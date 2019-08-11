@@ -1,7 +1,9 @@
 /**
- * Sanitize string
+ * Format string
+ * @param str String
+ * @return String
  */
-const sanitizeString = (str) => {
+const formatString = (str) => {
   return str
     .toLowerCase() // convert string to lowercase
     .replace(/[^a-z\d]/g, '') // replace every non alphabetical character
@@ -14,16 +16,11 @@ const sanitizeString = (str) => {
  * Filter matches from list of words
  * @param words Array
  * @param input String
- *
+ * @return [*]
  */
 export const isAnagram = (words, input) => {
-  // Filter list by length
-  /*const filteredWords = words.filter((word) => {
-    return word.length === input.length;
-  });
-*/
   // Return matches in list
   return words.filter((word) => {
-    return sanitizeString(word) === sanitizeString(input)
+    return formatString(word) === formatString(input)
   });
 };
