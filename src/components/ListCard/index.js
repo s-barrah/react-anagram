@@ -10,10 +10,12 @@ import Loading from '../Loading';
 
 import axios from '../../lib/axios';
 
+const WORDLIST_URL = '/wordlist.txt';
+
 export default (props) => {
   const [words, setWords] = useState(null);
 
-  const { updateList } = props;
+  const { updateList, updateButtonState } = props;
 
   const getWords = (url) => {
     return axios
@@ -22,6 +24,7 @@ export default (props) => {
         const results = (res.data).split(/\r?\n/); // split words by new line
         setWords(results);
         updateList(results);
+        updateButtonState(false);
       })
       .catch(err => {
         console.log(err);
@@ -31,7 +34,7 @@ export default (props) => {
 
   // Component mounts
   useEffect(() => {
-    getWords('/wordlist.txt');
+    getWords(WORDLIST_URL);
     return () => {
       //reset states on dismount
       setWords(null);
@@ -44,15 +47,24 @@ export default (props) => {
     <CardGroup>
       <Card className="p-4">
         <CardBody>
-          <h3 className="text-center">List of words</h3>
           {
             words ?
-              (words).map((str, index) => {
+              (
+                <div className="text-center">
+                  <h3>List is available</h3>
+                  <br/>
+                  <p>Enter a word in the input to search</p>
+                </div>
+              )
+              /*(words).map((str, index) => {
                 return (<p key={index}>{ str }</p>);
-              })
+              }) + 'and more...'*/
               :
               (
-                <Loading/>
+                <div className="text-center">
+                  <h3>Loading list...</h3>
+                  <Loading/>
+                </div>
               )
           }
         </CardBody>
