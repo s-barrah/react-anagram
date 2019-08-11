@@ -11,9 +11,9 @@ import './App.scss';
 import { isAnagram } from '../../lib/utils';
 
 // import Loading from '../Loading';
-import List from '../List';
-import Search from '../Search';
-import Result from '../Result';
+import ListCard from '../ListCard';
+import SearchCard from '../SearchCard';
+import ResultCard from '../ResultCard';
 
 /***/
 function App() {
@@ -54,18 +54,20 @@ function App() {
         <h1 className="text-center">Anagram</h1>
         <Row className="justify-content-center">
           <Col md="4">
-            <List
+            <ListCard
               updateList={(data) => setList(data)}
             />
           </Col>
           <Col md="4">
-            <Search
+            <SearchCard
               handleChange={handleChange}
               handleSubmit={handleSubmit}
             />
           </Col>
           <Col md="4">
-            <Result results={results}/>
+            <ResultCard
+              results={results}
+            />
           </Col>
         </Row>
       </Container>
