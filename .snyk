@@ -1,0 +1,60 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - node-sass > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - node-sass > sass-graph > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > @babel/core > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > eslint > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > eslint-plugin-import > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > html-webpack-plugin > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - styled-components > babel-plugin-styled-components > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - node-sass > gaze > globule > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > @svgr/webpack > @babel/core > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > eslint > inquirer > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > eslint > table > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > react-dev-utils > inquirer > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > @svgr/webpack > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > babel-preset-react-app > @babel/plugin-transform-classes > @babel/helper-define-map > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > @svgr/webpack > @babel/preset-env > @babel/plugin-transform-sticky-regex > @babel/helper-regex > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - styled-components > @babel/traverse > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > eslint-plugin-flowtype > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > webpack-manifest-plugin > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - styled-components > @babel/traverse > @babel/generator > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > babel-eslint > @babel/traverse > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > jest-environment-jsdom-fourteen > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > postcss-preset-env > postcss-custom-selectors > postcss-selector-parser > babel-eslint > @babel/traverse > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > postcss-preset-env > postcss-custom-selectors > postcss-selector-parser > babel-eslint > @babel/traverse > @babel/generator > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
+    - react-scripts > postcss-preset-env > postcss-custom-selectors > postcss-selector-parser > babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > lodash:
+        patched: '2021-10-28T02:36:41.293Z'
